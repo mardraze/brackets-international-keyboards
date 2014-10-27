@@ -28,10 +28,31 @@ define(function (require, exports, module) {
 
     var AppInit             = brackets.getModule("utils/AppInit"),
 		KeyBindingManager   = brackets.getModule("command/KeyBindingManager");
-
+	
+	var ctrlDown = false;
 	
     // Adds the buttons to the toolbar when the app is ready.
     AppInit.appReady(function () {
-		console.log('AppInit.appReady', KeyBindingManager);
+		var onCtrlUp = function(e){
+			var k = e.keyCode || e.which;
+			if(k == 17){ 
+				ctrlDown = false;
+				KeyBindingManager.setEnabled(true);
+				$(window).unbind(onCtrlUp);
+			}
+		};
+		
+		$(window).keydown(function(e){
+			e = (e || window.event);
+			var k = e.keyCode || e.which;
+			if(k == 17){
+			  ctrlDown = true;
+			}else if(k == 18 && ctrlDown) {
+				KeyBindingManager.setEnabled(false);
+				$(window).keyup(onCtrlUp);
+			}
+		});
+		
+
     });
 });
