@@ -1,4 +1,4 @@
 Brackets extension: International keyboards
 ================================
 
-It's extension for Brackets IDE to fix bugs with international letters.
+It's extension to fix bugs with international letters.
