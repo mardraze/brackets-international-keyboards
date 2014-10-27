@@ -1,6 +1,6 @@
 {
-    "name": "jeffslofish-quick-navigate",
-    "title": "International keyboards for Brakets",
+    "name": "international-keyboards",
+    "title": "International keyboards",
     "description": "Enable AltGr support in Brackets IDE.",
     "version": "1.0.0",
     "author": "Marcin Drazek <marcindr1@gmail.com>",
