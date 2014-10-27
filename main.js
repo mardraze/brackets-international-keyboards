@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2013 Jeffrey Fisher.
+ * Copyright (c) 2014 Marcin Drążek.
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -27,7 +27,7 @@ define(function (require, exports, module) {
     "use strict";
 
     var AppInit             = brackets.getModule("utils/AppInit"),
-		KeyBindingManager   = brackets.getModule("command/KeyBindingManager");
+	KeyBindingManager   = brackets.getModule("command/KeyBindingManager");
 	
 	var ctrlDown = false;
 	
