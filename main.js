@@ -31,7 +31,6 @@ define(function (require, exports, module) {
 	
 	var ctrlDown = false;
 	
-    // Adds the buttons to the toolbar when the app is ready.
     AppInit.appReady(function () {
 		var onCtrlUp = function(e){
 			var k = e.keyCode || e.which;
