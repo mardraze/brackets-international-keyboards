@@ -41,10 +41,6 @@ define(function (require, exports, module) {
 				$(window).unbind(this);
 			}
 		};
-        onCtrlUp.prototype.match = function(){
-          console.log('MATCH!');
-        };
-
 		$(window).keydown(function(e){
 			e = (e || window.event);
 			var k = e.keyCode || e.which;
